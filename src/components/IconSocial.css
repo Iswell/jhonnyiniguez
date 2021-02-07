@@ -1,0 +1,10 @@
+
+.social-svg-mask {
+    
+    fill: #FFF !important;
+}
+.social-svg-mask :hover {
+    
+    fill: #F26A2E !important;
+    transition-duration: 300ms;
+}

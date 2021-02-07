@@ -53,6 +53,9 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  padding-right: 2vh;
+  color: skyblue;
 }
 a:active,
 a:hover {
