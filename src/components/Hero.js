@@ -93,7 +93,7 @@ font-weight: bold;
 `
 
 const HeroH1 = styled.h1`
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
     padding: 0 1rem;

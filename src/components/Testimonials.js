@@ -50,17 +50,16 @@ const Testimonials = () => {
 export default Testimonials
 
 const TestimonialsContainer = styled.div`
-    width: 100%;
     background: #fcfcfc;
     color: #000;
-    padding: 10rem calc((100vw - 1300px) / 2);
+    padding: 5rem calc((100vw - 1300px) / 2);
+    width: 100%;
     height: 100%;
     padding-top: 10rem;
 
     @media screen and (max-width: 768px) {
         padding-top: 5rem;
         }
-    
 `
 const Description = styled.p`
     text-align: start;
@@ -104,17 +103,14 @@ const Testimonial = styled.div`
         }
     @media screen and (max-width: 980px) {
         padding-right: 5rem;
-        
         }    
 `
 const ColumnTwo = styled.div`
         display: grid;
         grid-template-columns: 1fr;
-       
-
         @media screen and (max-width: 980px) {
             grid-template-columns: 1fr;
-            margin-top: 3rem;
+            margin-top: 5rem;
         }
 `
 

@@ -1,7 +1,8 @@
 .player-container {
   background: #fcfcfc;
-  padding-top: 10rem;
-  
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 h1 {
@@ -14,11 +15,26 @@ h1 {
 
 .player-wrapper {
     position: relative;
-    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+    
   }
   
   .react-player {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .react-audio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    player-container {
+      width: 80%;
+    }
   }

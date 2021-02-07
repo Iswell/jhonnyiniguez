@@ -1,3 +1,5 @@
+// netlify contact form
+
 import React from 'react'
 import styled from 'styled-components'
 import EmailBg from '../assets/images/email.jpg'
@@ -45,7 +47,7 @@ const Email = () => {
                                 min-width: 250px;
                             }
                             
-                            `}>Sign up</Button>
+                            `} >Contact</Button>
                             
                 </EmailContent>
                
