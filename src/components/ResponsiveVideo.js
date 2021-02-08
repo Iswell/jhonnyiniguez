@@ -7,12 +7,12 @@ import "./ResponsiveVideo.css"
 const ResponsiveVideo = ({ url }) => {
      
       return (
+        
         <div id="video" className='player-container'>
         <h1>Videos</h1>
         <div className='player-wrapper'>
           
           <ReactPlayer
-            id="video"
             className='react-player'
             url={url}
             width='100%'
@@ -21,12 +21,13 @@ const ResponsiveVideo = ({ url }) => {
             controls={true}
             
           />
-          
         </div>
         </div>
+        
       )
     
   }
 
   export default ResponsiveVideo
 
+  

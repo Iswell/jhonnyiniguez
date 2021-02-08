@@ -92,7 +92,9 @@ export default () => {
           required
           value={inputs.message}
         /></label>
-        
+        <Gotcha>
+        <input type="text" name="_gotcha" />
+        </Gotcha>
         <button type="submit" disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
@@ -100,6 +102,7 @@ export default () => {
               : 'Submitted'
             : 'Submitting...'}
         </button>
+        
         </FormWrap>
       </form>
       {status.info.error && (
@@ -214,4 +217,7 @@ const FormWrap = styled.div`
               
           }
         }
+`
+const Gotcha = styled.div`
+        display: none;
 `

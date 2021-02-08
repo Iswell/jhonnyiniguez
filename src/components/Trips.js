@@ -59,27 +59,26 @@ const ProductsContainer = styled.div`
     padding: 3rem calc((100vw - 1300px) / 2);
     color: #fff;
     
-    padding-top: 10rem;
-    padding-bottom: 10rem;
         @media screen and (max-width: 768px) {
-        padding-top: 5rem;
+        padding-top: 0rem;
         }
 `
 
 const ProductsHeading = styled.div`
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: clamp(1.2rem,5vw,2.5rem);
     text-align: center;
-    
-    color: #000;
+    color: #F26A2E;
     font-weight: 600;
-    padding: 0 2rem 5rem;
+    padding: 2rem 2rem 4rem;
 
-   
+        @media screen and (max-width: 768px) {
+        padding-bottom: 3rem;
+        }
 `
 
 const ProductsWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-items: center;
     padding: 0 2rem;

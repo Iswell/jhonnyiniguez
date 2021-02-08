@@ -36,10 +36,10 @@ export const NavLogo = styled(Link)`
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     diplay: flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.9rem;
 
     &:hover {
         color: #ffff;
@@ -51,8 +51,6 @@ export const NavLogo = styled(Link)`
         font-size: clamp(1rem, 2.5vw, 2rem);
     }
 `
-
-
 
 export const MobileIcon = styled.div`
     display: none;
@@ -106,9 +104,9 @@ export const NavLinks = styled(Link)`
     padding: 0.5rem 1rem;
     height: 100%;
     font-family: Roboto;
-    
+    padding-top: 1.7rem;
     &:hover {
-        color: #fff;
+        color: #F26A2E;
             transition: all 0.3s ease;
         }
 

@@ -52,11 +52,11 @@ export default Testimonials
 const TestimonialsContainer = styled.div`
     background: #fcfcfc;
     color: #000;
-    padding: 5rem calc((100vw - 1300px) / 2);
+    padding: 3rem calc((100vw - 1300px) / 2);
     width: 100%;
     height: 100%;
     padding-top: 10rem;
-
+    
     @media screen and (max-width: 768px) {
         padding-top: 5rem;
         }
@@ -64,9 +64,13 @@ const TestimonialsContainer = styled.div`
 const Description = styled.p`
     text-align: start;
     padding-left: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: clamp(1.2rem, 5vw, 2.5rem);
     font-weight: 600;
+    color: #F26A2E;
+    @media screen and (max-width: 768px) {
+        padding-left: 4rem;
+    }
     
 `
 const ContentWrapper = styled.div`
@@ -88,13 +92,14 @@ const ColumnOne = styled.div`
 `
 const Testimonial = styled.div`
     padding-top: 3rem;
-    padding-right: 5rem;
+    padding-right: 2rem;
 
         h3 {
             margin-bottom: 1rem;
             font-size: 1.5rem;
             font-style: italic;
             padding-left: 1rem;
+            padding-bottom: 1rem;
         }
         p {
             font-size: 18px;
@@ -102,7 +107,9 @@ const Testimonial = styled.div`
             padding-left: 1rem;
         }
     @media screen and (max-width: 980px) {
-        padding-right: 5rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        
         }    
 `
 const ColumnTwo = styled.div`
@@ -110,7 +117,7 @@ const ColumnTwo = styled.div`
         grid-template-columns: 1fr;
         @media screen and (max-width: 980px) {
             grid-template-columns: 1fr;
-            margin-top: 5rem;
+            margin-top: 3rem;
         }
 `
 
