@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <NavLinks to="#video">Videos</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="#project">Photos</NavLinks>
+                                <NavLinks to="#photos">Photos</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="#contact">Contact</NavLinks>

@@ -124,7 +124,7 @@ const EmailContainer = styled.div`
         ), 
         url(${EmailBg}) no-repeat center;
         background-size: cover;
-        height: 80vw;
+        height: 60vw;
         width: 100%;
         padding: 10rem calc((100vw - 1300px) / 2);
         color: #fff;
@@ -132,8 +132,8 @@ const EmailContainer = styled.div`
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        @media screen and (max-width: 968px) {
-            height: 100%;
+        @media screen and (max-width: 1024px) {
+          height: 100%;
         }
 
 `
@@ -142,6 +142,7 @@ const EmailContent = styled.div`
         flex-direction: column;
         align-items: center;
         h1 {
+          font-family: 'Poppins', sans-serif;
             text-align: center;
             margin-bottom: 1rem;
             font-size: clamp(1rem, 5vw, 3rem);
@@ -163,6 +164,7 @@ const EmailContent = styled.div`
     
 `
 const FormWrap = styled.div`
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -184,6 +186,7 @@ const FormWrap = styled.div`
             
         }
             button {
+              font-family: 'Poppins', sans-serif;
                 background: #F26A2E;
                 white-space: nowrap;
                 padding: 16px 40px;
@@ -216,6 +219,7 @@ const FormWrap = styled.div`
               max-width: 250px;
               
           }
+          
         }
 `
 const Gotcha = styled.div`

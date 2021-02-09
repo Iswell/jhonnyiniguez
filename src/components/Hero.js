@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Video from "../assets/videos/foggyland.mp4"
 import IconSocial from "../components/IconSocial"
+import AudioPlayer from "../components/AudioPlayer"
 
 const Hero = () => {
     return (
@@ -11,6 +12,9 @@ const Hero = () => {
             </HeroBg>
             <HeroContent>
                 <HeroItems>
+                    <HeroAudio>
+                        <AudioPlayer />
+                    </HeroAudio>
                     <HeroH1>
                     Unique sounds for inmersive experiences
                         
@@ -32,7 +36,7 @@ const HeroContainer = styled.div`
     height: 100vh;
     padding: 0 1rem;
     position: relative;
-    margin-top: -80px;
+    margin-top: -100px;
     color: #fff;
 
     :before {
@@ -93,6 +97,8 @@ font-weight: bold;
 `
 
 const HeroH1 = styled.h1`
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
     font-size: clamp(1.5rem, 5vw, 3rem);
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
@@ -100,5 +106,12 @@ const HeroH1 = styled.h1`
     color: #fff;
 `
 
+const HeroAudio = styled.div`
+    padding-bottom: 2rem;
+    letter-spacing: 1px;
 
+    &:hover {
+        color: #000;
+    }
+`
 

@@ -5,8 +5,9 @@ import { Link } from "gatsby"
 
 
 export const Nav = styled.nav`
+
     background: ${({ active }) => active ? "#fff" : "linear-gradient(to botttom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,25 +33,35 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
+    font-family: 'Poppins', sans-serif;
     color: #141414;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     diplay: flex;
     align-items: center;
-    padding: 1.9rem;
-
+    padding: 1.5rem;
+@media screen and (max-width: 960px) {
+        padding-top: 1rem;
+            padding-left: 1.5rem;
+        }
     &:hover {
         color: #ffff;
             transition: all 0.3s ease;
         }
 
     h1 {
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 1rem;
-        font-size: clamp(1rem, 2.5vw, 2rem);
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+
+        
     }
+    
 `
+
+
 
 export const MobileIcon = styled.div`
     display: none;
@@ -72,7 +83,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-
+    
     @media screen and (max-width: 960px) {
         display: flex;
         flex-direction: column;
@@ -88,6 +99,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
+    padding-top: 0.8rem;
     height: 80px;
 
     @media screen and (max-width: 960px) {
@@ -97,16 +109,16 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
+    font-family: 'Poppins', sans-serif;
     color: #141414;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
-    font-family: Roboto;
-    padding-top: 1.7rem;
+    
     &:hover {
-        color: #F26A2E;
+        color: #fff;
             transition: all 0.3s ease;
         }
 

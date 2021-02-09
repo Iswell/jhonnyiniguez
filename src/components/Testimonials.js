@@ -23,7 +23,7 @@ const Testimonials = () => {
     return (
         <TestimonialsContainer id="about">
             <Description>
-                About
+                <h1>About</h1>
             </Description>
             <ContentWrapper>
                
@@ -62,16 +62,19 @@ const TestimonialsContainer = styled.div`
         }
 `
 const Description = styled.p`
-    text-align: start;
-    padding-left: 2rem;
-    margin-bottom: 1rem;
-    font-size: clamp(1.2rem, 5vw, 2.5rem);
-    font-weight: 600;
+h1 {
+    font-family: 'Poppins', sans-serif;
     color: #F26A2E;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem,5vw,2.5rem);
+    padding: 2rem 2rem 3rem;
+
     @media screen and (max-width: 768px) {
-        padding-left: 4rem;
+        padding-bottom: 2rem;
+        
+        }
     }
-    
 `
 const ContentWrapper = styled.div`
     display: grid;
@@ -95,6 +98,7 @@ const Testimonial = styled.div`
     padding-right: 2rem;
 
         h3 {
+            
             margin-bottom: 1rem;
             font-size: 1.5rem;
             font-style: italic;

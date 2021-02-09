@@ -42,5 +42,15 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Poppins`,
+          `source sans pro\:100,200,400` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }

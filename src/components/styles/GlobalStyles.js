@@ -2,10 +2,13 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     *{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        @media only screen and (max-width: 280px) {
+            max-width: 100% !important; 
+        }
     
     }
 

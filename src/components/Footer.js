@@ -4,11 +4,13 @@ import {Link} from 'gatsby'
 
 const Footer = () => {
     return (
+        <FooterGlobal>
         <FooterContainer>
             <FooterLinksWrapper>
                 <FooterDesc>
                     <h2>JOHNNY IÑÍGUEZ</h2>
                     <p>Unique sounds for inmersive experiences</p>
+                    
                 </FooterDesc>
                 <FooterLinkItems>
                     <FooterLinkTitle>About</FooterLinkTitle>
@@ -32,26 +34,54 @@ const Footer = () => {
                     <FooterLink to="/">Instagram</FooterLink>
                 </FooterLinkItems>
             </FooterLinksWrapper>
+            
         </FooterContainer>
+        <FooterCopy>
+                <p>Jhonny Iñíguez © 2021 | Developed by Vixibly</p>
+            </FooterCopy>
+        </FooterGlobal>
     )
 }
 
 export default Footer
+const FooterGlobal = styled.div`
+padding: 1rem calc((100vw - 1300px) / 2);
+background: #000000;
+
+`
 
 const FooterContainer = styled.div`
-    padding: 5rem calc((100vw - 1300px) / 2);
+    padding: 2rem calc((100vw - 1300px) / 2);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: #fafafb;
     background: #000000;
+    @media screen and (max-width: 768px) {
+        padding-left: 1.5rem;
+    }
+    @media only screen and (max-width: 1000px) {
+        padding-left: 5rem;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding-left: 3rem;
+    }
+    @media only screen and (max-width: 360px) {
+        padding-left: 2rem;
+    }
+    @media only screen and (max-width: 280px) {
+        padding-left: 1rem;
+    }
+
 `
 const FooterDesc = styled.div`
 padding: 1rem 2rem;
-    h1 {
-        margin-bottom: 1rem;
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0rem;
         color: #f26a2e;
     }
     p {
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 1rem;
         color: #66605a;
     }
@@ -73,6 +103,7 @@ const FooterLinksWrapper = styled.div`
    
 `
 const FooterLinkItems = styled.div`
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -87,11 +118,13 @@ const FooterLinkItems = styled.div`
     }
 `
 const FooterLinkTitle = styled.h2`
+font-family: 'Poppins', sans-serif;
     font-size: 14px,
     margin-bottom: 28px;
    
 `
 const FooterLink = styled(Link)`
+font-family: 'Poppins', sans-serif;
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
@@ -100,5 +133,22 @@ const FooterLink = styled(Link)`
     &:hover {
         color: #f26a2e;
         transition: 0.3s ease-out;
+    }
+`
+const FooterCopy = styled(Link)`
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        text-align: center;
+        text-decoration: none;
+        
+        padding-bottom: 0.5rem;
+        color: #66605a;
+
+        &:hover {
+            color: #f26a2e;
+            transition: 0.3s ease-out;
+        }
     }
 `

@@ -45,6 +45,7 @@ overflow: hidden;
 const MusicContent = styled.div`
     
     h1 {
+        font-family: 'Poppins', sans-serif;
         color: #F26A2E;
         text-align: center;
         margin-bottom: 1rem;

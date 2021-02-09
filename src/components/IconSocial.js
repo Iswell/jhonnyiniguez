@@ -25,6 +25,9 @@ const IconSocial = () => {
                 <SocialIcon  url="https://www.instagram.com/cantarodante.traktor/?hl=af" className="animicon2" style={{ height: 45, width: 45, margin: 6 }} />
                 </IconContent>
                 
+                <IconContent>
+                <SocialIcon  url="https://api.whatsapp.com/send?phone=41786158451" className="animicon2" style={{ height: 45, width: 45, margin: 6 }} />
+                </IconContent>
             </IconContainer>
         </div>
     )
