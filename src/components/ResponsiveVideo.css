@@ -53,14 +53,18 @@
   }
 
 .button {
-    width: 80%;
-    height: 80%;
+    
     fill:#ffffff;
     }
 
 .path {
       fill:#ffffff!important;
+     
     }
 .path:hover {
       fill:#f26a2e!important;
+    }
+    .svg {
+      fill:#ffffff!important;
+     
     }

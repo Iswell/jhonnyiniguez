@@ -1,15 +1,16 @@
 import React from "react";
 import jhonnySong from '../assets/audio/jhonnysong.mp4';
-
+import styled from 'styled-components'
 import useSound from 'use-sound';
 import "./ResponsiveVideo.css"
 
 const Pause = ({ stop }) => {
   return (
+    <ButtonPlayer>
     <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="40"
+    width="38"
+    height="30"
     viewBox="0 0 68 60"
     className="button"
     onClick={()=>stop()}
@@ -29,6 +30,7 @@ const Pause = ({ stop }) => {
       </g>
     </g>
     </svg>
+    </ButtonPlayer>
   );
 };
 
@@ -36,8 +38,8 @@ const Play = ({ play }) => {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="50"
-    height="40"
+    width="38"
+    height="30"
     margin-top="10"
     viewBox="0 0 70 60"
     className="button"
@@ -61,3 +63,11 @@ const Player = () => {
 };
 
 export default Player;
+
+const ButtonPlayer = styled.div`
+@media only screen and (max-width: 768px) {
+  button {
+    width: 80%;
+  }
+    
+`
