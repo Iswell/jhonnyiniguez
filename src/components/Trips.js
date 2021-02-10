@@ -70,7 +70,7 @@ const ProductsHeading = styled.div`
     text-align: center;
     color: #F26A2E;
     font-weight: 600;
-    padding: 3rem 2rem 4rem;
+    padding: 4rem 2rem 5rem;
 
         @media screen and (max-width: 768px) {
         padding-bottom: 3rem;

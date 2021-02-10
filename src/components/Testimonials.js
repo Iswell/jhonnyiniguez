@@ -55,10 +55,11 @@ const TestimonialsContainer = styled.div`
     padding: 3rem calc((100vw - 1300px) / 2);
     width: 100%;
     height: 100%;
-    padding-top: 10rem;
+    padding-top: 5rem;
     
     @media screen and (max-width: 768px) {
         padding-top: 5rem;
+        
         }
 `
 const Description = styled.p`
@@ -66,12 +67,14 @@ h1 {
     font-family: 'Poppins', sans-serif;
     color: #F26A2E;
     text-align: center;
-    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     font-size: clamp(1.2rem,5vw,2.5rem);
-    padding: 2rem 2rem 3rem;
+    
 
     @media screen and (max-width: 768px) {
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
         
         }
     }

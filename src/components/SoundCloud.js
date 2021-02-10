@@ -38,7 +38,7 @@ overflow: hidden;
     flex-direction: column;
     align-items: center;
         @media screen and (max-width: 768px) {
-        padding-top: 4rem;
+        padding-top: 2rem;
         
         }
 `

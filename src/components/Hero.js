@@ -29,7 +29,7 @@ const Hero = () => {
 export default Hero
 
 const HeroContainer = styled.div`
-    background: black;
+    
     display: flex;
     justify-content: center;
     align-items: center;
