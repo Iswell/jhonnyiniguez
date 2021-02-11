@@ -45,7 +45,7 @@ const Trips = ({ heading }) => {
     }
     return (
         <ProductsContainer id="photos">
-            <ProductsHeading >{heading}</ProductsHeading>
+            <ProductsHeading><h1>Photos</h1></ProductsHeading>
             <ProductsWrapper>{getTrips(data)}</ProductsWrapper>
         </ProductsContainer>
     )
@@ -65,17 +65,19 @@ const ProductsContainer = styled.div`
 `
 
 const ProductsHeading = styled.div`
+h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(1.2rem,5vw,2.5rem);
-    text-align: center;
     color: #F26A2E;
-    font-weight: 600;
-    padding: 4rem 2rem 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem,5vw,2.5rem);
+    padding: 3rem 2rem 3rem;
 
-        @media screen and (max-width: 768px) {
-        padding-bottom: 3rem;
-        padding-top: 0rem;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
         }
+    }
 `
 
 const ProductsWrapper = styled.div`

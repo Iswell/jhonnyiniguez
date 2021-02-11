@@ -62,7 +62,7 @@ const TestimonialsContainer = styled.div`
         
         }
 `
-const Description = styled.p`
+const Description = styled.div`
 h1 {
     font-family: 'Poppins', sans-serif;
     color: #F26A2E;

@@ -36,7 +36,7 @@ const Footer = () => {
             </FooterLinksWrapper>
             
         </FooterContainer>
-        <FooterCopy>
+        <FooterCopy to="#music">
                 <p>Jhonny Iñíguez © 2021 | Developed by Vixibly</p>
             </FooterCopy>
         </FooterGlobal>

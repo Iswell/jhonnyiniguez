@@ -1,6 +1,8 @@
 .player-container {
   background: #fcfcfc;
   overflow: hidden;
+
+  padding-bottom: 2rem;
   
 }
 #video.player-container{
@@ -53,18 +55,17 @@
   }
 
 .button {
-    
     fill:#ffffff;
+    cursor:pointer;
     }
+    
 
 .path {
       fill:#ffffff!important;
-     
+      
     }
 .path:hover {
       fill:#f26a2e!important;
+      transition-duration: 300ms;
     }
-    .svg {
-      fill:#ffffff!important;
-     
-    }
+  

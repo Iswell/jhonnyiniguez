@@ -28,17 +28,16 @@ overflow: hidden;
     height: 100%;
     width: 100%;
     padding: 3rem calc((100vw - 1300px) / 2);
-    color: #000000;
     justify-content: center;
     align-items: center;
-    max-height: 80vh;
+    
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
         @media screen and (max-width: 768px) {
-        padding-top: 2rem;
+        padding-top: 0rem;
         
         }
 `
@@ -54,7 +53,7 @@ const MusicContent = styled.div`
 
         @media screen and (max-width: 768px) {
             padding-bottom: 2rem;
-            
+            padding-top: 1rem;
             }
         }
         

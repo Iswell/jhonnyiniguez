@@ -2,11 +2,9 @@ import styled from 'styled-components'
 
 import { Link } from "gatsby"
 
-
-
 export const Nav = styled.nav`
 
-    background: ${({ active }) => active ? "#fff" : "linear-gradient(to botttom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
+    background: ${({ active }) => active ? "#000" : "linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(255,255,255,0) 100%)"};
     height: 100px;
     display: flex;
     justify-content: center;
@@ -34,7 +32,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(Link)`
     font-family: 'Poppins', sans-serif;
-    color: #141414;
+    color: #f26a2e;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
@@ -47,7 +45,7 @@ export const NavLogo = styled(Link)`
             padding-left: 1.5rem;
         }
     &:hover {
-        color: #ffff;
+        color: #fff;
             transition: all 0.3s ease;
         }
 
@@ -110,7 +108,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
     font-family: 'Poppins', sans-serif;
-    color: #141414;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -118,11 +116,12 @@ export const NavLinks = styled(Link)`
     height: 100%;
     
     &:hover {
-        color: #fff;
+        color: #f26a2e;
             transition: all 0.3s ease;
         }
 
     @media screen and (max-width: 960px) {
+        color: #141414;
         text-align: center;
         padding: 2rem;
         width: 100%;
