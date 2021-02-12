@@ -12,14 +12,11 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 999;
-
     @media screen and (max-width: 960px) {
         background: ${({ click }) => (click ? "#000" : "linear-gradient(to botttom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)")};
         transition: 0.8s all ease;
     }
-    
 `
-
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
