@@ -29,7 +29,7 @@ const Hero = () => {
 export default Hero
 
 const HeroContainer = styled.div`
-    
+    background: linear-gradient(#000, #f26a2e);
     display: flex;
     justify-content: center;
     align-items: center;
