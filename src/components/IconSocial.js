@@ -10,21 +10,24 @@ const IconSocial = () => {
             <IconContainer>
 
                 <IconContent>
-                <SocialIcon url="https://www.facebook.com/cantarodante.traktor" className="facebook" id="facebook" style={{ height: 40, width: 40, margin: 5 }} />
+                <SocialIcon url="https://www.facebook.com/cantarodante.traktor" className="animicon1" style={{ height: 45, width: 45, margin: 6 }} />
                 </IconContent>  
 
                 <IconContent>
-                <SocialIcon  url="https://www.youtube.com/channel/UCTg7uNPer5yiCjRezrr-Tng/featured" style={{ height: 40, width: 40, margin: 5 }} />
+                <SocialIcon  url="https://www.youtube.com/channel/UCTg7uNPer5yiCjRezrr-Tng/featured" className="animicon2" style={{ height: 45, width: 45, margin: 6 }} />
                 </IconContent>
 
                 <IconContent>
-                <SocialIcon  url="https://soundcloud.com/h-recordstudio/04-deseame-suerte-johnny-camion-iniguez" style={{ height: 40, width: 40, margin: 5 }} />
+                <SocialIcon  url="https://soundcloud.com/h-recordstudio/04-deseame-suerte-johnny-camion-iniguez" className="animicon1" style={{ height: 45, width: 45, margin: 6 }}  />
                 </IconContent>
 
                 <IconContent>
-                <SocialIcon  url="https://www.instagram.com/cantarodante.traktor/?hl=af" style={{ height: 40, width: 40, margin: 5 }} />
+                <SocialIcon  url="https://www.instagram.com/cantarodante.traktor/?hl=af" className="animicon2" style={{ height: 45, width: 45, margin: 6 }} />
                 </IconContent>
                 
+                <IconContent>
+                <SocialIcon  url="https://api.whatsapp.com/send?phone=41786158451" className="animicon2" style={{ height: 45, width: 45, margin: 6 }} />
+                </IconContent>
             </IconContainer>
         </div>
     )
@@ -45,6 +48,7 @@ const IconContent = styled.li`
     grid-template-columns: repeat(2, 1fr 1fr);
     padding-right: 0.5rem;
     width: 60px;
+    
     &:hover {
         transform: translateY(-4px);
         transition-duration: 300ms;

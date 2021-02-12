@@ -44,8 +44,8 @@ const Trips = ({ heading }) => {
         return tripsArray
     }
     return (
-        <ProductsContainer id="project">
-            <ProductsHeading >{heading}</ProductsHeading>
+        <ProductsContainer id="photos">
+            <ProductsHeading><h1>Photos</h1></ProductsHeading>
             <ProductsWrapper>{getTrips(data)}</ProductsWrapper>
         </ProductsContainer>
     )
@@ -59,28 +59,31 @@ const ProductsContainer = styled.div`
     padding: 3rem calc((100vw - 1300px) / 2);
     color: #fff;
     
-    padding-top: 10rem;
-    padding-bottom: 10rem;
         @media screen and (max-width: 768px) {
-        padding-top: 5rem;
+        padding-top: 0rem;
         }
 `
 
 const ProductsHeading = styled.div`
-    font-size: clamp(1rem, 5vw, 3rem);
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #F26A2E;
     text-align: center;
-    
-    color: #000;
-    font-weight: 600;
-    padding: 0 2rem 5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem,5vw,2.5rem);
+    padding: 3rem 2rem 3rem;
 
-   
+    @media screen and (max-width: 768px) {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        }
+    }
 `
 
 const ProductsWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     justify-items: center;
     padding: 0 2rem;
 

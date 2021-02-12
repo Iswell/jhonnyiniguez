@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <>
-            <IconContext.Provider value={{ color: "#141414" }}>
+            <IconContext.Provider value={{ color: "#fff" }}>
                 <Nav active={scroll} click={click}>
                     <NavbarContainer>
                         <NavLogo to="/">
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <NavLinks to="#video">Videos</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="#project">Photos</NavLinks>
+                                <NavLinks to="#photos">Photos</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="#contact">Contact</NavLinks>

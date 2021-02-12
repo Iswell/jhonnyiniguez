@@ -1,20 +1,28 @@
 .player-container {
   background: #fcfcfc;
-  padding-top: 10rem;
+  overflow: hidden;
+
+  padding-bottom: 2rem;
   
 }
+#video.player-container{
+  background: #fcfcfc;
+  padding-top: 2rem;
+}
 
-h1 {
-  color: #000000;
+.player-container h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #F26A2E;
   text-align: center;
   margin-bottom: 1rem;
-  font-size: clamp(1rem, 5vw, 3rem);
-  padding: 0 2rem 5rem;
+  font-size: clamp(1.2rem,5vw,2.5rem);
+  padding: 5rem 2rem 3rem;
   }
 
 .player-wrapper {
     position: relative;
-    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+    
   }
   
   .react-player {
@@ -22,3 +30,42 @@ h1 {
     top: 0;
     left: 0;
   }
+
+  .react-audio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 50%;
+    max-width: 100%;
+    height: auto;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    player-container {
+      width: 80%;
+    }
+
+    #video.player-container{
+      padding-top: 0rem;
+    }
+    #video.player-container h1{
+      background: #fcfcfc;
+      padding-top: 1rem;
+    }
+  }
+
+.button {
+    fill:#ffffff;
+    cursor:pointer;
+    }
+    
+
+.path {
+      fill:#ffffff!important;
+      
+    }
+.path:hover {
+      fill:#f26a2e!important;
+      transition-duration: 300ms;
+    }
+  

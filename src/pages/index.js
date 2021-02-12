@@ -5,9 +5,9 @@ import SEO from "../components/seo"
 import Trips from "../components/Trips"
 import SoundCloud from "../components/SoundCloud"
 import Testimonials from "../components/Testimonials"
-
-import Contact from "../components/Contact"
+import ContactForm from '../components/ContactForm'
 import ResponsiveVideo from "../components/ResponsiveVideo"
+
 
 const IndexPage = () => (
 
@@ -19,9 +19,7 @@ const IndexPage = () => (
    
     <SoundCloud />
     <Trips heading="Photos" />
-    
-    <Contact />
-    
+    <ContactForm />
   </Layout>
 
 )
