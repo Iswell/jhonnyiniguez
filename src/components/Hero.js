@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from "../assets/videos/foggyland.mp4"
+import Video from "../assets/videos/foggyland2.mp4"
 import IconSocial from "../components/IconSocial"
 import AudioPlayer from "../components/AudioPlayer"
 
